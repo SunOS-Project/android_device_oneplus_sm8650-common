@@ -277,7 +277,6 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
-$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-sun
@@ -314,6 +313,20 @@ PRODUCT_PACKAGES += \
 # QSPA
 PRODUCT_PACKAGES += \
     vendor.qti.qspa-service
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    alarm \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    overlay \
+    perf \
+    sepolicy \
+    wfd
 
 # Sensors
 PRODUCT_PACKAGES += \
