@@ -5,6 +5,7 @@
 # audio.primary.pineapple depends on liblx-osal and vendor.qti.hardware.AGMIPC@1.0-impl, which are gnu makefile targets
 # libar-pal depends on libagmclient, which is a gnu makefile target
 # libarmemlog depends on liblx-osal, hich is a gnu makefile target
+# libcne, libmasc, lowi-server, qms depend on libwpa_client, which is a gnu makefile target
 # libmcs depends on libagm, which is a gnu makefile target
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
 # libvui_intf depends on liblx-osal, which is a gnu makefile target
@@ -220,7 +221,6 @@ vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
@@ -2012,12 +2012,12 @@ vendor/etc/vintf/manifest/datafactoryservice-saidl.xml
 vendor/etc/vintf/manifest/mwqem-saidl.xml
 vendor/lib64/libCneAppJni.so
 vendor/lib64/libWlanServiceJni.so
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libjnihelper.so
-vendor/lib64/libmasc.so
+vendor/lib64/libmasc.so;DISABLE_CHECKELF
 vendor/lib64/libshsc.so
 vendor/lib64/libwms.so
 vendor/lib64/libwqe.so
@@ -2480,7 +2480,7 @@ vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/mlid
 vendor/bin/qsap_location
 vendor/bin/slim_daemon
@@ -3125,7 +3125,7 @@ vendor/lib64/libqvrcameraplayback.so
 vendor/lib64/libqvrservice.so;DISABLE_DEPS
 vendor/lib64/libqvrservice_client.qti.so
 vendor/lib64/libtracker_6dof_impl.so
-vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so
+vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.qegahal-V1-ndk_platform.so
 
 # RIL
@@ -3154,7 +3154,7 @@ system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/hw/qcrilNrd
 vendor/bin/ks
 vendor/bin/nicmd
-vendor/bin/qms
+vendor/bin/qms;DISABLE_CHECKELF
 vendor/bin/qsap_dcfd
 vendor/bin/qtigetprop
 vendor/bin/qtisetprop

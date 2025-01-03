@@ -65,6 +65,7 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.hardware.qccsyshal@1.0',
         'vendor.qti.hardware.qccsyshal@1.1',
         'vendor.qti.hardware.qccsyshal@1.2',
+        'vendor.qti.hardware.qxr-V1-ndk',
         'vendor.qti.hardware.wifidisplaysession@1.0',
         'vendor.qti.imsrtpservice@3.0',
         'vendor.qti.imsrtpservice@3.1',
@@ -77,6 +78,7 @@ lib_fixups: lib_fixups_user_type = {
         'libats',
         'libagmclient',
         'libpalclient',
+        'libwpa_client',
         'vendor.qti.hardware.AGMIPC@1.0-impl',
     ): lib_fixup_remove,
 }
@@ -86,11 +88,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.secure_element-V1-ndk.so', 'android.hardware.secure_element-V1-ndk_odm.so'),
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff': blob_fixup()
         .add_needed('libshims_aidl_fingerprint_v3.oplus.so'),
-    'odm/bin/hw/vendor-oplus-hardware-performance-V1-service': blob_fixup()
-        .add_needed('libbase_shim.so')
-        .add_needed('libprocessgroup_shim.so'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so')
+        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V5-ndk.so')
         .remove_needed('android.hardware.graphics.common-V4-ndk.so'),
     ('odm/lib64/libCOppLceTonemapAPI.so', 'odm/lib64/libSuperRaw.so', 'odm/lib64/libYTCommon.so', 'odm/lib64/libyuv2.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
@@ -110,12 +109,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libui_shim.so'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
         .regex_replace('/my_product', '/product'),
-    'system_ext/bin/wfdservice64': blob_fixup()
-        .add_needed('libwfdservice_shim.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
-        .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
+        .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V3-cpp.so'),
     'vendor/bin/system_dlkm_modprobe.sh': blob_fixup()
         .regex_replace(r'.*\bzram or zsmalloc\b.*\n', '')
         .regex_replace(r'-e "zram" -e "zsmalloc"', ''),
