@@ -333,7 +333,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.oplus-multihal \
     sensors.dynamic_sensor_hal \
-    sensors.oplus
+    sensors.oplus \
+    sensors.qsh_wrapper
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
