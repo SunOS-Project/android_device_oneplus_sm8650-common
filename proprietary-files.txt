@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 12 (CPH2581_15.0.0.702(EX01)).
+## are from OnePlus 12 (CPH2581_15.0.0.801(EX01)).
 
 # Current blobs with ELF checks disabled:
 # libar-pal depends on libagmclient, which is a gnu makefile target
@@ -1735,6 +1735,7 @@ vendor/lib64/camera/components/com.qti.hvx.binning.so
 vendor/lib64/camera/components/com.qti.hwcfg.bps.so
 vendor/lib64/camera/components/com.qti.hwcfg.ife.so
 vendor/lib64/camera/components/com.qti.hwcfg.ipe.so
+vendor/lib64/camera/components/com.qti.hwcfg.tfe.so
 vendor/lib64/camera/components/com.qti.node.afbfusion.so
 vendor/lib64/camera/components/com.qti.node.aon.so
 vendor/lib64/camera/components/com.qti.node.customhwnode.so
