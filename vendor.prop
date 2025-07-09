@@ -177,12 +177,10 @@ vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.chall
 ro.crypto.metadata_init_delete_all_keys.enabled=true
 
 # Display
-persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 ro.vendor.display.sensortype=2
 vendor.display.comp_mask=0
 vendor.display.disable_3d_adaptive_tm=1
-vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_noise_layer=1
@@ -190,7 +188,6 @@ vendor.display.disable_offline_rotator=1
 vendor.display.disable_scaler=0
 vendor.display.disable_sdr_dimming=0
 vendor.display.disable_sdr_histogram=1
-vendor.display.disable_spec_fence=1
 vendor.display.disable_stc_dimming=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
@@ -203,11 +200,8 @@ vendor.display.enable_optimize_refresh=0
 vendor.display.enable_rc_support=0
 vendor.display.enable_rounded_corner=1
 vendor.display.force_lm_to_fb_config=1
-vendor.display.force_tonemapping=1
-vendor.display.gpu_rendering=true
 vendor.display.scaling_dest_opt_mode=4
 vendor.display.scaling_source_opt_mode=4
-vendor.display.smomo_game_support=0
 vendor.display.use_smooth_motion=1
 vendor.display.vds_allow_hwc=1
 
