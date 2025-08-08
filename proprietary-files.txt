@@ -2222,7 +2222,6 @@ vendor/etc/display/DPU10__.xml
 vendor/etc/display/DPU870.xml
 vendor/etc/display/DPU9__.xml
 vendor/etc/display/advanced_sf_offsets.xml
-vendor/etc/display/thermallevel_to_fps.xml
 vendor/etc/init/init.qti.graphics.rc
 vendor/etc/clstc_config_library.xml
 vendor/lib64/libbacklight-calib.so
@@ -2247,32 +2246,8 @@ vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libvmfilexfer.so
 
 # Display calibration data
-vendor/etc/display/perf_hint_threshold.xml
-vendor/etc/display/qdcm_calib_data_Dual_dsi_csot_nt36532_video_mode_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_ft8726_lcd_video_mode_dsi_focaltech_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json
-vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json
-vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json
 vendor/etc/ltm_config_AA545_P_3_A0005_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_AC090_P_3_A0005_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_evt_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_high_pre_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_enzo_boe_ili7838e_1264_2780_pvt_bd_dsc_cmd_mode_panel.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.qti.hardware.display.color-service
@@ -2938,7 +2913,6 @@ vendor/etc/pwr/VideoPowerOptFeature.xml
 vendor/etc/seccomp_policy/qsap_qapeservice.policy
 vendor/etc/vintf/manifest/vendor.qti.hardware.perf2.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.power.powermodule.xml
-vendor/etc/smomo_setting.xml
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/libaodoptfeature.so
 vendor/lib64/libapengine.so
