@@ -67,3 +67,15 @@ on property:sys.boot_completed=1
     copy /vendor/etc/oplus_Widevine_licenses.pfm /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
+
+on property:vendor.post_boot.parsed=1
+    # CPUSets
+    write /dev/cpuset/foreground/cpus 0-6
+
+    # CPUFreq
+    write /sys/devices/system/cpu/cpufreq/policy0/walt/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy0/walt/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpufreq/policy4/walt/up_rate_limit_us 1000
+    write /sys/devices/system/cpu/cpufreq/policy4/walt/down_rate_limit_us 10000
+    write /sys/devices/system/cpu/cpufreq/policy7/walt/up_rate_limit_us 2000
+    write /sys/devices/system/cpu/cpufreq/policy7/walt/down_rate_limit_us 5000
