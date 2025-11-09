@@ -155,15 +155,6 @@ if [ -d /proc/sys/walt ]; then
 	echo 85 > /sys/devices/system/cpu/cpufreq/policy3/walt/hispeed_load
 	echo 85 > /sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_load
 
-	if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
-		echo 1324800 > /sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq
-		echo 1555200 > /sys/devices/system/cpu/cpufreq/policy3/walt/hispeed_freq
-		echo 1593600 > /sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_freq
-	else
-		echo 1344000 > /sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq
-		echo 1536000 > /sys/devices/system/cpu/cpufreq/policy3/walt/hispeed_freq
-		echo 1708800 > /sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_freq
-	fi
 else
 	echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 	echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
