@@ -397,6 +397,7 @@ vendor/bin/vendor_modprobe.sh
 
 # Keymaster
 vendor/bin/hw/android.hardware.security.keymint-service-qti
+vendor/bin/KmInstallKeybox
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 vendor/lib64/libkeymasterdeviceutils.so
