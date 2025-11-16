@@ -687,10 +687,7 @@ odm/lib64/libhta_hexagon_runtime_snpe.so
 # OPLUS Log Core
 odm/bin/oldc_vnd
 odm/lib64/libolc_vnd.so
-odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
-odm/lib64/vendor.oplus.hardware.olc2-V2-ndk.so
 vendor/lib64/libolc_vnd.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.oplus.hardware.olc2-V2-ndk.so;MODULE_SUFFIX=_vendor
 
 # OSENSE
 odm/lib64/libosenseaidlhalclient.so
