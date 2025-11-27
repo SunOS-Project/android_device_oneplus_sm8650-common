@@ -266,6 +266,7 @@ system_ext/app/ImsDataChannelService/ImsDataChannelService.apk
 system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/etc/permissions/rsmcService.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
+system_ext/etc/permissions/vendor.qti.imsdatachannel.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/etc/permissions/vendor.qti.imsdcservice.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
@@ -370,6 +371,7 @@ odm/bin/init.subsys.sh
 odm/etc/init/commcenterd.rc
 odm/etc/init/subsys_daemon.rc
 odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml
+odm/etc/vintf/manifest/device_manifest_subsys.xml
 odm/etc/QtiFtmPublicKey.pem
 odm/etc/oem_stx_platform_license.pfm
 odm/etc/plugin_config.xml
@@ -441,9 +443,11 @@ vendor/etc/vintf/manifest/deviceinfo-saidl.xml
 vendor/etc/vintf/manifest/qms-saidl.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml
 vendor/etc/O_STX_platform_license.pfm
+vendor/etc/O_TDD-Bypass_SM7675_platform_license.pfm
 vendor/etc/O_TDD-Bypass_platform_license.pfm
 vendor/etc/SDA_platform_license.pfm
 vendor/etc/SNS_platform_license.pfm
+vendor/etc/SNS_platform_license_for_SM7675.pfm
 vendor/etc/telephony_packages.xml
 vendor/lib64/deviceInfoServiceModuleNr.so
 vendor/lib64/libQtiRilLoadable.so
@@ -566,7 +570,7 @@ vendor/etc/init/vendor.qti.rmt_storage.rc
 # Secure element
 odm/bin/hw/android.hardware.secure_element-service.qti
 odm/etc/init/android.hardware.secure_element-service.qti.rc
-odm/etc/vintf/manifest/secure_element_omapi_service.xml:vendor/etc/vintf/manifest/secure_element-service-omapi.xml
+odm/etc/vintf/manifest/secure_element_omapi_service.xml
 vendor/etc/vintf/manifest/android.hardware.secure_element.xml
 vendor/lib64/hw/libEseUtils.so
 vendor/lib64/libGPQeSE.so

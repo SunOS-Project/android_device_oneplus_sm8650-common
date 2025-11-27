@@ -364,6 +364,7 @@ system/lib64/libostatslog.so:system_ext/lib64/libostatslog.so
 system_ext/bin/horae
 system_ext/etc/horae/horae.conf
 system_ext/etc/horae/horae_SM7675.conf
+system_ext/etc/horae/horae_SM8635.conf
 system_ext/etc/horae/horae_SM8650.conf
 system_ext/etc/horae/horae_SM8650_CAIHONG.conf
 system_ext/etc/init/horae.rc
