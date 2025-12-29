@@ -85,6 +85,16 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
         .add_line_if_missing('sched_get_priority_min: 1')
         .add_line_if_missing('sched_get_priority_max: 1'),
+    'vendor/etc/init/vendor.dpmd.rc': blob_fixup()
+        .regex_replace(
+            r'(service\s+vendor\.dpmd\s+/vendor/bin/vendor\.dpmd\s*\n)',
+            r'\1    user root\n'
+        ),
+    'vendor/etc/init/nicmd.rc': blob_fixup()
+        .regex_replace(
+            r'(service\s+vendor\.nicmd\s+/system/vendor/bin/nicmd\s*\n\s*class\s+main)',
+            r'\1\n    user root\n    group root'
+        ),
     'vendor/etc/pwr/PowerFeatureConfig.xml': blob_fixup()
         .regex_replace(r'(<Name>GamePowerOptFeature</Name>\s*<Enable>)0(<\/Enable>)', r'\g<1>1\g<2>'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
